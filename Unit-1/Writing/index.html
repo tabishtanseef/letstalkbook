@@ -1,0 +1,287 @@
+<html>
+<head>
+<link href="style2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+
+@font-face {
+  font-family: ZapfDingbats BT;
+  src: url(fonts/zapfding.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Comic Sans MS;
+  src: url(fonts/comic.ttf);
+}
+
+@font-face {
+  font-family: cacmoose;
+  src: url(fonts/cacmoose.ttf);
+}
+
+body{
+background-image: url(../img/3.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	width:80%;
+	border: 2px solid orange;
+	box-shadow:2px 2px 5px #000;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color:#ffffff8f;
+	font-family: Roboto regular;
+    padding: 14px 28px;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+}
+.hidden{
+display:none;
+}
+
+.tab1{
+background-image: url('../img/yellow.jpg');
+border:2px solid white;
+border-radius:;
+padding:10x;
+width:95%;
+margin-left:2.5%;
+}
+#dim{
+margin-top:10px;
+font-family: Roboto regular;
+font-size:20px;
+
+}
+select{
+border-radius:20px;
+text-align-last:center;
+border: 2px solid #FCB424;
+background:#fbe99d;
+font-family:Roboto;
+}
+option{
+
+background:transparent;
+}
+.bwo{
+height:35px;
+}
+@media only screen and (orientation: landscape) {
+  #bhai {
+  width:100px;
+	 -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  }
+}
+</style>
+  
+  </head>
+<body>
+<center>
+<h2>Writing</h2>
+<h2 style="margin-top:10px; padding:10px;margin-bottom:30px; font-size:25px; ">Look at the pictures and select from the dropbox.</h2></center>
+
+<div class="tab1">
+
+	
+	<div class="container" style ="margin-top:30px";>			
+	<div class="row" id="dim">
+	<div class="col-sm-12" style ="margin-top:-20px;" >
+	<br>
+	
+	<p style="line-height:97px; margin-bottom:20px;">
+
+	
+	This is my <select id="tab1"></select> <img  id="bhai"  src="audio/1.png"> .
+	
+	This is my <select id="tab2"></select> <img  id="bhai"  src="audio/2.png">  
+	
+	and <select id="tab3"></select> <img  id="bhai"  src="audio/3.png"> .
+	
+	That is my <select id="tab4"></select> <img  id="bhai"  src="audio/4.png"> .
+	
+	I keep the book and <select id="tab5"></select> <img  id="bhai"  src="audio/5.png"> 
+		
+	in the <select id="tab6"></select> <img  id="bhai"  src="audio/6.png"> .  
+	
+	This is my <select id="tab7"></select> <img  id="bhai"  src="audio/7.png"> .  
+	
+	The room is near the <select id="tab8"></select> <img  id="bhai"  src="audio/8.png"> .
+	
+	I can see a <select id="tab9"></select> <img  id="bhai"  src="audio/9.png"> from the window.   
+	
+	I can see a <select id="tab10"></select> <img  id="bhai"  src="audio/10.png"> on the tree.
+	
+	I can see the <select id="tab11"></select> <img  id="bhai"  src="audio/11.png"> in the day
+	
+	I can see <select id="tab12"></select> <img  id="bhai"  src="audio/12.png">  
+	
+	and the <select id="tab13"></select> <img  id="bhai"  src="audio/13.png"> in the night.
+	
+	
+	
+	
+	</p>
+	
+	</div>
+	</div>
+		<div class="row">
+			<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/reset.png" onmouseover="this.src='../img/reset1.png'" onmouseout="this.src='../img/reset.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="submit" onclick="go()" src="../img/submit.png" onmouseover="this.src='../img/submit1.png'" onmouseout="this.src='../img/submit.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" disabled  onclick="show()" src="../img/sol.png" onmouseover="this.src='../img/sol1.png'" onmouseout="this.src='../img/sol.png'" style="margin-top:10px; width:60%;"></center></div>
+		</div>
+	<br>
+</div>
+
+
+</div>
+<br><br>
+<br><br>
+<div class="tab4 hidden">
+<img  width="100%" height="auto" src="audio/Welldone.gif">
+</div>
+
+<audio id="audio2" src="audio/try-again.mp3"></audio>
+<audio id="audio1" src="audio/well-done.mp3"></audio>
+
+<script>
+window.onload = function(e){ 
+$("#sol").css("pointer-events", "none");
+
+    $('#tab1').append("<option selected disabled>     </option><option>room</option><option>window</option><option>table</option>");
+    $('#tab2').append("<option selected disabled>     </option><option>book</option><option>window</option><option>chair</option>");
+    $('#tab3').append("<option selected disabled>     </option><option>table</option><option>window</option><option>pencil</option>");
+    $('#tab4').append("<option selected disabled>     </option><option>bag</option><option>book</option><option>pencil</option>");
+    $('#tab5').append("<option selected disabled>     </option><option>bag</option><option>bed</option><option>pencil</option>");
+    $('#tab6').append("<option selected disabled>     </option><option>bag</option><option>bed</option><option>window</option>");
+    $('#tab7').append("<option selected disabled>     </option><option>tree</option><option>bed</option><option>window</option>");
+    $('#tab8').append("<option selected disabled>     </option><option>tree</option><option>bird</option><option>window</option>");
+    $('#tab9').append("<option selected disabled>     </option><option>tree</option><option>bird</option><option>sun</option>");
+    $('#tab10').append("<option selected disabled>     </option><option>tree</option><option>bird</option><option>sun</option>");
+    $('#tab11').append("<option selected disabled>     </option><option>room</option><option>bird</option><option>sun</option>");
+    $('#tab12').append("<option selected disabled>     </option><option>room</option><option>stars</option><option>sun</option>");
+    $('#tab13').append("<option selected disabled>     </option><option>moon</option><option>bird</option><option>sun</option>");
+}
+function go() {
+
+ var a1 = document.getElementById("tab1");
+ var a2 = document.getElementById("tab2");
+ var a3 = document.getElementById("tab3");
+ var a4 = document.getElementById("tab4");
+ var a5 = document.getElementById("tab5");
+ var a6 = document.getElementById("tab6");
+ var a7 = document.getElementById("tab7");
+ var a8 = document.getElementById("tab8");
+ var a9 = document.getElementById("tab9");
+ var a10 = document.getElementById("tab10");
+ var a11 = document.getElementById("tab11");
+ var a12 = document.getElementById("tab12");
+ var a13 = document.getElementById("tab13");
+ 
+var ans1= a1.options[a1.selectedIndex].text;
+var ans2= a2.options[a2.selectedIndex].text;
+var ans3= a3.options[a3.selectedIndex].text;
+var ans4= a4.options[a4.selectedIndex].text;
+var ans5= a5.options[a5.selectedIndex].text;
+var ans6= a6.options[a6.selectedIndex].text;
+var ans7= a7.options[a7.selectedIndex].text;
+var ans8= a8.options[a8.selectedIndex].text;
+var ans9= a9.options[a9.selectedIndex].text;
+var ans10= a10.options[a10.selectedIndex].text;
+var ans11= a11.options[a11.selectedIndex].text;
+var ans12= a12.options[a12.selectedIndex].text;
+var ans13= a13.options[a13.selectedIndex].text;
+$("#sol").css("pointer-events", "auto");
+ if(ans1=="" && ans2=="" && ans3=="" && ans4=="" && ans5=="" && ans6=="" && ans7=="" && ans8=="" && ans9=="" && ans10=="" && ans11=="" && ans12=="" && ans13==""){
+$("#sol").css("pointer-events", "none");
+ }
+
+if(ans1=="room" && ans2=="chair" && ans3=="table" && ans4=="book" && ans5=="pencil" 
+
+&& ans6=="bag" && ans7=="bed" && ans8=="window" && ans9=="tree"
+
+ && ans10=="bird" && ans11=="sun"&& ans12=="stars"&& ans13=="moon"){
+
+var audio = document.getElementById("audio1");
+       audio.play();
+	  setInterval(function(){
+		window.location = "hero.html";
+	},2000);
+	 
+}
+else{
+
+var audio = document.getElementById("audio2");
+       audio.play();
+}
+}
+
+function show() {
+$('select').css("border",'2px solid green');
+$("#submit").css("pointer-events", "none");
+	var t1=document.getElementById("tab1");
+	t1.value = "room";
+	
+	var t2=document.getElementById("tab2");
+	t2.value = "chair";
+	
+	var t3=document.getElementById("tab3");
+	t3.value = "table";
+	
+	var t4=document.getElementById("tab4");
+	t4.value = "book";
+	
+	var t5=document.getElementById("tab5");
+	t5.value = "pencil";
+	
+	var t6=document.getElementById("tab6");
+	t6.value = "bag";
+	
+	var t7=document.getElementById("tab7");
+	t7.value = "bed";
+	
+	var t8=document.getElementById("tab8");
+	t8.value = "window";
+	
+	var t9=document.getElementById("tab9");
+	t9.value = "tree";
+	
+	var t10=document.getElementById("tab10");
+	t10.value = "bird";
+	
+	var t11=document.getElementById("tab11");
+	t11.value = "sun";
+	
+	var t12=document.getElementById("tab12");
+	t12.value = "stars";
+	
+	var t13=document.getElementById("tab13");
+	t13.value = "moon";
+	
+}
+
+
+</script>
+
+</body>
+</html>

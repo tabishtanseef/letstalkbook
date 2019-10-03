@@ -1,0 +1,238 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	width:100%;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-12{
+	line-height:50px;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+.hidden {
+	display: none
+}
+.vis{
+	font-size:24px;
+	visibility:hidden;
+}
+.ban{
+	border:2px solid;
+	background:white;
+}
+</style>
+</head>
+
+<body> 
+<div class="container tab1">
+	<h2>WRITING</h2>
+	<h3 class="f">Click the following words in the correct order to make sentences. </h3>
+	<div class="rohit">
+		<div class="row tt images">
+			<div class="col-md-6" style="padding:10px;">
+				<br><img src="img/1.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6 ques1 ">
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(2)" >is</span> <span class="block" onclick="c(4)" >dog</span> <span class="block" onclick="c(1)">This</span> <span class="block" onclick="c(3)">a</span></div>
+					<div class="col-md-12 ban"><span class="a1 vis">This</span> <span class="a2 vis">is</span> <span class="a3 vis">a</span> <span class="a4 vis">dog</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(8)" >is</span> <span class="block" onclick="c(6)" >His</span> <span class="block" onclick="c(7)">name</span> <span class="block" onclick="c(9)">Spot</span></div>
+					<div class="col-md-12 ban"><span class="a6 vis">His</span> <span class="a7 vis">name</span> <span class="a8 vis">is</span> <span class="a9 vis">Spot</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(12)" >is</span> <span class="block" onclick="c(11)">He</span> <span class="block" onclick="c(13)">brown</span></div>
+					<div class="col-md-12 ban"><span class="a11 vis">He</span> <span class="a12 vis">is</span> <span class="a13 vis">brown</span> </div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(16)" >tail</span> <span class="block" onclick="c(17)" >is</span> <span class="block" onclick="c(18)">furry</span> <span class="block" onclick="c(15)">His</span></div>
+					<div class="col-md-12 ban"><span class="a15 vis">His</span> <span class="a16 vis">tail</span> <span class="a17 vis">is</span> <span class="a18 vis">furry</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(21)" >can</span> <span class="block" onclick="c(20)">He</span> <span class="block" onclick="c(22)">bark</span></div>
+					<div class="col-md-12 ban"><span class="a20 vis">He</span> <span class="a21 vis">can</span> <span class="a22 vis">bark</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(24)" >He</span> <span class="block" onclick="c(28)" >with</span> <span class="block" onclick="c(27)">play</span> <span class="block" onclick="c(25)">likes</span> <span class="block" onclick="c(26)" >to</span> <span class="block" onclick="c(30)">ball</span> <span class="block" onclick="c(29)">a</span></div>
+					<div class="col-md-12 ban"><span class="a24 vis">He</span> <span class="a25 vis">likes</span> <span class="a26 vis">to</span> <span class="a27 vis">play</span> <span class="a28 vis">with</span> <span class="a29 vis">a</span> <span class="a30 vis">ball</span> </div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(34)" >my</span> <span class="block" onclick="c(32)" >Spot</span> <span class="block" onclick="c(35)">dog</span> <span class="block" onclick="c(33)">is</span></div>
+					<div class="col-md-12 ban"><span class="a32 vis">Spot</span> <span class="a33 vis">is</span> <span class="a34 vis">my</span> <span class="a35 vis">dog</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/res2.png" onmouseover="this.src='../img/res1.png'" onmouseout="this.src='../img/res2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" onclick="show()" src="../img/solu2.png" onmouseover="this.src='../img/solu1.png'" onmouseout="this.src='../img/solu2.png'" style="margin-top:10px; width:60%;"></center></div>
+		</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<script>
+
+var z = 1; 
+var y = 6; 
+var w = 11; 
+var u = 15; 
+var v = 20; 
+var q = 24; 
+var p = 32; 
+
+function play(){
+var audio = document.getElementById('audio1');
+audio.play();
+}
+function i(x){
+play();
+$('.a'+x).removeClass('vis');
+z++; 
+console.log(z);
+}
+function j(x){
+play();
+$('.a'+x).removeClass('vis');
+y++; 
+console.log(y);
+}
+function k(x){
+play();
+$('.a'+x).removeClass('vis');
+w++; 
+console.log(w);
+}
+function l(x){
+play();
+$('.a'+x).removeClass('vis');
+u++; 
+console.log(u);
+}
+function m(x){
+play();
+$('.a'+x).removeClass('vis');
+v++; 
+console.log(v);
+}
+function n(x){
+play();
+$('.a'+x).removeClass('vis');
+q++; 
+console.log(q);
+}
+function o(x){
+play();
+$('.a'+x).removeClass('vis');
+p++; 
+console.log(p);
+}
+
+function c(x){
+	if(x==z){
+	i(z);
+	}
+	else if(x==y){
+	j(y);
+	}
+	else if(x==w){
+	k(w);
+	}
+	else if(x==u){
+	l(u);
+	}
+	else if(x==v){
+	m(v);
+	}
+	else if(x==q){
+	n(q);
+	}
+	else if(x==p){
+	o(p);
+	}
+}
+window.onload = function()
+{  $("#sol").css("pointer-events", "none");
+}
+function done(){
+$("#sol").css("pointer-events", "auto");
+console.log('z =' + z);
+console.log('y =' + y);
+console.log('w =' + w);
+console.log('u =' + u);
+console.log('v =' + v);
+console.log('q =' + q);
+console.log('p =' + p);
+	if(z==5 && y==10 && w==14 && u==19 && v==23 && q==31 && p==36){
+		play();
+		setInterval(function(){
+		window.location="hero.html";
+		},2000);
+	}
+	else{
+	var audio = document.getElementById('audio2');
+	audio.play();
+	}
+
+}
+function show() { 
+$('span').removeClass('vis');
+} 
+</script>
+</body>
+</html>

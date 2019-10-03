@@ -1,0 +1,232 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	width:100%;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-12{
+line-height:50px;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+
+.hidden {
+	display: none
+}
+.bb{
+font-size:30px;
+}
+@media (max-width: 480px) {
+    .bb{
+	font-size:20px;
+	}
+}
+</style>
+</head>
+
+<body> 
+<div class="container tab1">
+	<h2>SPEAKING</h2>
+	<h3 class="f">Listen carefully and repeat.</h3>
+	<div class="rohit">
+	
+		<div class="ques1">
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(1)"></center></div>
+				<div class="col-md-8 bb" >We are monkeys.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(2)"></center></div>
+				<div class="col-md-8 bb" >We live in trees.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(3)"></center></div>
+				<div class="col-md-8 bb" >We swing from branch to branch.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(4)"></center></div>
+				<div class="col-md-8 bb" >We love to eat fruits.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(5)"></center></div>
+				<div class="col-md-8 bb" >We chatter all day.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(6)"></center></div>
+				<div class="col-md-8 bb" >The jungle is our home.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-4" ></div>
+				<div class="col-md-4"><center><img onclick="go(1)" src="../img/s2.png" onmouseover="this.src='../img/s1.png'" onmouseout="this.src='../img/s2.png'" style=" width:80%;"></center></div>
+				<div class="col-md-4" ></div>
+			</div>
+		</div>
+		
+		<div class="ques2">
+		<div class="que1 hidden">
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(7)"></center></div>
+				<div class="col-md-8 bb" >We are giraffes.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(8)"></center></div>
+				<div class="col-md-8 bb" >We are very tall.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(9)"></center></div>
+				<div class="col-md-8 bb" >We have long necks.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(10)"></center></div>
+				<div class="col-md-8 bb" >We also have long legs.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(11)"></center></div>
+				<div class="col-md-8 bb" >We eat leaves from trees.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(12)"></center></div>
+				<div class="col-md-8 bb" >We like to live close to the jungle.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-4" ></div>
+				<div class="col-md-4"><center><img onclick="go(2)" src="../img/s2.png" onmouseover="this.src='../img/s1.png'" onmouseout="this.src='../img/s2.png'" style=" width:80%;"></center></div>
+				<div class="col-md-4" ></div>
+			</div>
+		</div>
+		</div>
+		<div class="ques3">
+		<div class="que2 hidden">
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(13)"></center></div>
+				<div class="col-md-8 bb" >We are elephants.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(14)"></center></div>
+				<div class="col-md-8 bb" >We trumpet loudly.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(15)"></center></div>
+				<div class="col-md-8 bb" >We eat leaves.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(16)"></center></div>
+				<div class="col-md-8 bb" >We walk slowly.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(17)"></center></div>
+				<div class="col-md-8 bb" >We swing our long trunks from side to side.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-2" ><center><img src="../img/s.png" style="width:40px;  " onclick="play(18)"></center></div>
+				<div class="col-md-8 bb" >The jungle is our home.</div>
+			</div>
+			<div class="row tt ">
+				<div class="col-md-4" ></div>
+				<div class="col-md-4"><center><img onclick="go(3)" src="../img/s2.png" onmouseover="this.src='../img/s1.png'" onmouseout="this.src='../img/s2.png'" style=" width:80%;"></center></div>
+				<div class="col-md-4" ></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center><img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<audio id="s1" src="audio/s1.mp3"></audio>
+<audio id="s2" src="audio/s2.mp3"></audio>
+<audio id="s3" src="audio/s3.mp3"></audio>
+<audio id="s4" src="audio/s4.mp3"></audio>
+<audio id="s5" src="audio/s5.mp3"></audio>
+<audio id="s6" src="audio/s6.mp3"></audio>
+<audio id="s7" src="audio/s7.mp3"></audio>
+<audio id="s8" src="audio/s8.mp3"></audio>
+<audio id="s9" src="audio/s9.mp3"></audio>
+<audio id="s10" src="audio/s10.mp3"></audio>
+<audio id="s11" src="audio/s11.mp3"></audio>
+<audio id="s12" src="audio/s12.mp3"></audio>
+<audio id="s13" src="audio/s13.mp3"></audio>
+<audio id="s14" src="audio/s14.mp3"></audio>
+<audio id="s15" src="audio/s15.mp3"></audio>
+<audio id="s16" src="audio/s16.mp3"></audio>
+<audio id="s17" src="audio/s17.mp3"></audio>
+<audio id="s18" src="audio/s18.mp3"></audio>
+
+<iframe src="audio/0.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+<script>
+
+function play(a){
+var audio = document.getElementById('s'+a);
+audio.play();
+}
+function go(a){
+	$('.ques'+a).addClass('hidden');
+	$('.que'+a).removeClass('hidden');
+
+	if(a==3){
+	$('.tab1').addClass('hidden');
+	$('.tab2').removeClass('hidden');
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setInterval(function(){ 
+		window.location="../index.html";
+		},3000);
+	}
+}
+
+</script>
+</body>
+</html>

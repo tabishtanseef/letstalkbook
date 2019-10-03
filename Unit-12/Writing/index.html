@@ -1,0 +1,188 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+	background-attachment:fixed;
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-12{
+
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+.hidden {
+	display: none
+}
+select{
+border-radius:20px;
+border: 2px solid #FCB424;
+background:#fbe99d;
+font-family:Roboto;
+}
+input{
+width:100%;
+}
+option{
+text-align:center;
+background:transparent;
+}
+.sel{
+margin-top:10%;
+}
+
+</style>
+</head>
+
+<body>
+	
+    
+<div class="container-fluid tab1">
+	<h2>WRITING</h2>
+	<h3 class="l ">Rewrite the sentences putting capital letters, full stops and question marks at the right places.</h3>
+	<div class="rohit">
+	
+	<div class="ques1 ">
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">A. &nbsp;&nbsp;do you have a sister </div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a1"> </div>
+		</div>
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">B. &nbsp;&nbsp;i am six years old</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a2"> </div>
+		</div>
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">C. &nbsp;&nbsp;this is a computer</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a3"> </div>
+		</div>
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">D. &nbsp;&nbsp;my name is meena</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a4"></div>
+		</div>
+		
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">E. &nbsp;&nbsp;what is your name</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a5"></div>
+		</div>
+		
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">F. &nbsp;&nbsp;can you come with me</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a6"></div>
+		</div>
+		
+		<div class="row tt">
+			<div class="col-md-12" style="padding:20px;">G. &nbsp;&nbsp;i have two dolls</div>
+			<div class="col-md-12" style="padding:20px;"> &nbsp;&nbsp;<input type="text" id="a7"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/res2.png" onmouseover="this.src='../img/res1.png'" onmouseout="this.src='../img/res2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" disabled onclick="solve()" src="../img/solu2.png" onmouseover="this.src='../img/solu1.png'" onmouseout="this.src='../img/solu2.png'" style="margin-top:10px; width:60%;"></center></div>
+		</div>
+	</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+
+<script>
+
+function done(){
+
+var bla1 = $('#a1').val();
+ 
+ var bla2 = $('#a2').val();
+ 
+ var bla3 = $('#a3').val();
+ 
+ var bla4 = $('#a4').val();
+ 
+ var bla5 = $('#a5').val();
+ 
+ var bla6 = $('#a6').val();
+ 
+ var bla7 = $('#a7').val();
+ 
+	if(bla1=='Do you have a sister?' && bla2=='I am six years old.' && bla3=='This is a computer.' && bla4=='My name is Meena.' && bla5=='What is your name?' && bla6=='Can you come with me?' && bla7=='I have two dolls.' ){
+		var audio = document.getElementById("audio1");
+		audio.play();
+		setInterval(function(){ $('.tab1').addClass('hidden')
+		$('.tab2').removeClass('hidden')},1000);
+		setInterval(function(){ 
+		window.location="../index.html";
+		},4000);
+	}
+	else{
+	var audio = document.getElementById("audio2");
+	audio.play();
+	}
+}
+
+
+function solve(){
+$('#submit').css('pointer-events','none');
+	$('#a1').val('Do you have a sister?');
+	$('#a2').val('I am six years old.');
+	$('#a3').val('This is a computer.');
+	$('#a4').val('My name is Meena.');
+	$('#a5').val('What is your name?');
+	$('#a6').val('Can you come with me?');
+	$('#a7').val('I have two dolls.');
+}
+    </script>
+</body>
+
+</html>

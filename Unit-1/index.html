@@ -1,0 +1,102 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+
+body {
+background:orange;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.container-fluid{
+margin-top:50px;
+margin-bottom:50px;
+text-align:center;
+font-family: 'Mukta', sans-serif;
+background-image:url('img/yellow.jpg');
+background-position:center;
+box-shadow:5px 5px 5px #DD4803;
+border:2px solid #DD4803;
+border-radius:0px 100px 0px;
+width:80%;
+}
+h2{
+padding:20px;
+background:rgba(255, 67, 15, 0.3);
+width:80%;
+margin-top:20px;
+border-radius:0px 30px 0px;
+text-align:center;
+}
+
+#block {
+  opacity:0;
+  transition:opacity 1s ease-in;*
+    -webkit-transition: opacity 1s  ease-in;
+       -moz-transition: opacity 1s  ease-in;
+         -o-transition: opacity 1s  ease-in;
+}
+#block.show {
+  opacity:1;
+}
+
+
+#block {
+    opacity: 0;
+}
+
+.hidden{
+display:none;
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #FFB900;
+  font-size: 1.3em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+
+</style>
+</head>
+<body id="block">
+<center>
+	
+<div class="container-fluid">
+	<div class="row">
+		
+		<div class="col-md-1 "></div>
+		<div class="col-md-6 ">
+			<center><img src="img/food.png" style="padding:10px; width:100%;"></center>
+		</div>
+		<div class="col-md-5 ">
+			<div class="row">
+				<div class="col-md-12"><img id="showHideButton" onclick="act('Listening')" src="img/l1.png" onmouseover="this.src='img/l2.png'" onmouseout="this.src='img/l1.png'" border="0"style="margin-top:20%; width:60%;"></div>
+				<div class="col-md-12"><img id="showHideButton" onclick="act('Speaking')" src="img/p1.png" onmouseover="this.src='img/p2.png'" onmouseout="this.src='img/p1.png'" border="0"style="margin-top:10%; width:60%;"></div>
+				<div class="col-md-12"><img id="showHideButton" onclick="act('Writing')" src="img/w1.png" onmouseover="this.src='img/w2.png'" onmouseout="this.src='img/w1.png'" border="0"style="margin-top:10%; width:60%;"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+</center>
+</body>
+<script>
+$(document).ready(function load(){
+    var $block = $("#block");
+	$block.toggleClass('show');
+});
+function act(a){
+ var $block = $("#block");
+	$block.toggleClass('show');
+setInterval(function(){ window.location.href=a+'/index.html'; },1000);
+}
+</script>
+</html>

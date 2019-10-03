@@ -1,0 +1,231 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	width:100%;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-10{
+line-height:50px;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+
+.hidden {
+	display: none
+}
+</style>
+</head>
+
+<body>
+	
+    
+<div class="container tab1">
+	<h2>LISTENING</h2>
+	<h3 class="f">Listen very carefully and click on the correct choice.</h3>
+	<h3 class="l hidden">Click on the correct situation when you will say Sorry</h3>
+	<div class="rohit">
+		<div class="row tt images">
+			<div class="col-md-4" style="padding:10px; text-align:center; margin:auto;">
+				<img src="img/play.png" style="width:60%;" onclick="yes()">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/1.png" class="img1" style="width:100%;">
+				<img src="img/2.png" class="img2 hidden" style="width:100%;">
+				<img src="img/3.png" class="img3 hidden" style="width:100%;">
+				<img src="img/4.png" class="img4 hidden" style="width:100%;">
+				<img src="img/5.png" class="img5 hidden" style="width:100%;">
+			</div>
+			<div class="col-md-2" style="padding:10px;"></div>
+		</div>
+		<div class="ques1 hidden">
+			<div class="row tt">
+				<div class="col-md-6">
+					<button class="block" onclick="wrong(11)" id="wrong11">help someone in the playground </button>
+				</div>
+				<div class="col-md-6">
+					<button class="block" onclick="correct(1)" id="correct1">hit someone in the playground</button>
+				</div>
+			</div>
+			<div class="row tt">
+				<div class="col-md-6">
+					<button class="block" onclick="correct(2)" id="correct2"> break a glass</button>
+				</div>
+				<div class="col-md-6">
+					<button class="block" onclick="wrong(12)" id="wrong12">push someone</button>
+				</div>
+			</div>
+			<div class="row tt">
+				<div class="col-md-6">
+					<button class="block" onclick="wrong(13)" id="wrong13">play with my sister</button>
+				</div>
+				<div class="col-md-6">
+					<button class="block" onclick="correct(3)" id="correct3">shout at my sister</button>
+				</div>
+			</div>
+			<div class="row tt">
+				<div class="col-md-6">
+					<button class="block" onclick="correct(4)" id="correct4">do not do my home-work</button>
+				</div>
+				<div class="col-md-6">
+					<button class="block" onclick="wrong(14)" id="wrong14">do my homework</button>
+				</div>
+			</div>
+			<div class="row tt">
+				<div class="col-md-6">
+					<button class="block" onclick="wrong(15)" id="wrong15">share my lunch with my friend</button>
+				</div>
+				<div class="col-md-6">
+					<button class="block" onclick="correct(5)" id="correct5">eat my friend’s lunch without asking him</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/res2.png" onmouseover="this.src='../img/res1.png'" onmouseout="this.src='../img/res2.png'" style="margin-top:10px; width:60%;"></center></div>
+				<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:60%;"></center></div>
+				<div class="col-md-4"><center><img id="sol"  onclick="show()" src="../img/solu2.png" onmouseover="this.src='../img/solu1.png'" onmouseout="this.src='../img/solu2.png'" style="margin-top:10px; width:60%;"></center></div>
+			</div>
+		</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<audio id="s" src="audio/l1.mp3"></audio>
+<script>
+
+var currentTime =0;
+
+function updateCurrentTime(){
+currentTime++;
+console.log(currentTime);
+	if(currentTime==11){
+		$('.img1').addClass('hidden')
+		$('.img2').removeClass('hidden')
+	}
+	else if(currentTime==15){
+		$('.img2').addClass('hidden')
+		$('.img3').removeClass('hidden')
+	}
+	else if(currentTime==20){
+		$('.img3').addClass('hidden')
+		$('.img4').removeClass('hidden')
+	}
+	else if(currentTime==25){
+		$('.img4').addClass('hidden')
+		$('.img5').removeClass('hidden')
+	}
+	else if(currentTime==32){
+		$('.images').addClass('hidden')
+		$('.ques1').removeClass('hidden')
+		$('.l').removeClass('hidden')
+		$('.f').addClass('hidden')
+	}
+}
+
+function yes(){  
+	var audio = document.getElementById('s');
+	audio.play();
+	updateCurrentTime();
+    setInterval(function(){
+		updateCurrentTime();
+	},1000);
+}
+
+
+function wrong(a) {
+	$('#wrong' + a).css('background', 'red');
+	var audio = document.getElementById('audio2');
+	audio.play();
+}
+
+var i, j, k, l, m, n, o;
+
+function correct(a) {
+if(a==1){ i = 1;}
+else if(a==2){ j = 1;}
+else if(a==3){ k = 1;}
+else if(a==4){ m = 1;}
+else { l = 1;}
+var audio = document.getElementById('audio1');
+	audio.play();
+	$('#correct' + a).css('background', '#005b00');
+	$('#correct' + a).css('color', 'white'); 
+}
+	
+function done(){
+	if(i == 1 && j == 1 && k == 1 && l == 1 && m == 1  ){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setInterval(function(){
+		window.location = "hero.html";
+	},2000);
+	}
+	else{
+	var audio = document.getElementById('audio2');
+	audio.play();
+	}
+}
+
+function show(){
+	$('#correct1').css('background','#005b00');
+	$('#correct2').css('background','#005b00');
+	$('#correct3').css('background','#005b00');
+	$('#correct4').css('background','#005b00');
+	$('#correct5').css('background','#005b00');
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+	<script src="js/data.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/jquery.ui.touch-punch.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	<style>
+	#block {
+  opacity:0;
+  transition:opacity 1s ease-in;*
+    -webkit-transition: opacity 1s  ease-in;
+       -moz-transition: opacity 1s  ease-in;
+         -o-transition: opacity 1s  ease-in;
+}
+#block.show {
+  opacity:1;
+}
+
+
+#block {
+    opacity: 0;
+}
+#blocks {
+  opacity:0;
+  transition:opacity 1s ease-in;*
+    -webkit-transition: opacity 1s  ease-in;
+       -moz-transition: opacity 1s  ease-in;
+         -o-transition: opacity 1s  ease-in;
+}
+#blocks.show {
+  opacity:1;
+}
+
+
+#blocks {
+    opacity: 0;
+}
+.container{
+margin-top:10px;
+text-align:center;
+padding:30px;
+font-family: 'Mukta', sans-serif;
+background:#DBF0EF;
+background-position:center;
+box-shadow:5px 5px 5px #DD4803;
+border:2px solid #DD4803;
+border-radius:40px;
+
+}
+	</style>
+</head>
+
+<body>
+<div id="block" class="miya">
+
+
+
+<div class="wrapper">
+	<div class="container">
+	<center>
+	<h1 style="width:80%; border-radius:20px; text-align:center; background-color:#0D4200; color:white; padding:20px;">WRITING</h1>
+<h2 style="width:90%; border-radius:20px; text-align:center; background-color:#0D4200; color:white; padding:15px;">Drag the words from the box into the right shops.</h2>
+</center>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:7px;">
+				<div class="questions">
+				
+				<center><ul style="list-style:none;" id="ques-info"></center>
+					
+				</ul>
+				
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="padding:2px;">
+				<div class="sol-div">
+					<center><h2 style="font-family:roboto;">Vegetable shop</h2></center>
+					<div class="drop-box" id="hardDrop">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="padding:2px;">
+				<div class="sol-div">
+					<center><h2 style="font-family:roboto;">Fruit shop</h2></center>
+					<div class="drop-box" id="tDrop">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="padding:2px;">
+				<div class="sol-div">
+					<center><h2 style="font-family:roboto;">Grocery shop</h2></center>
+					<div class="drop-box" id="dDrop">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12" style="padding:2px;">
+				<div class="sol-div">
+					<center><h2 style="font-family:roboto;">Bakery shop</h2></center>
+					<div class="drop-box" id="softDrop">
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	<center>
+	<div class="row">
+		<div class="col-md-6"><center><img id="" onclick="window.location.reload()" src="img/res2.png" onmouseover="this.src='img/res1.png'" onmouseout="this.src='img/res2.png'" style="margin-top:10%; width:60%;"></center></div>
+		<div class="col-md-6"><center><img class="btn submit" id="btnSubmit" onclick="tab()"  src="img/sub2.png" onmouseover="this.src='img/sub1.png'" onmouseout="this.src='img/sub2.png'" style="margin-top:10%; width:60%;"></center></div>
+	</div>
+		</center>
+			</div>
+		<br><br>
+		
+			
+			
+			
+			
+</div>
+
+</div>
+		
+<div id="blocks" class="tab ">
+<img src="../img/Welldone.gif" height="auto" width="100%">
+</div>
+
+
+</body>
+</html>

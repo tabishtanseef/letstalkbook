@@ -1,0 +1,301 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	width:100%;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-10{
+line-height:50px;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+
+.hidden {
+	display: none
+}
+</style>
+</head>
+
+<body>
+	
+    
+<div class="container tab1">
+	<h2>LISTENING</h2>
+	<h3 class="f">Listen to the sounds and click on the correct choice.</h3>
+	<div class="rohit">
+		<div class="row tt lion">
+			<div class="col-md-4 sec1" style="padding:10px; text-align:center; margin:auto;">
+				<img src="img/play.png" style="width:60%;" onclick="yes()">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/lion.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<div class="row  ques1 hidden">
+					<div class="col-md-12"><center><img class="mo" id="2" onclick="no(2,1)" src="img/1.png" onmouseover="this.src='img/10.png'" onmouseout="this.src='img/1.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="3" onclick="no(3,2)" src="img/2.png" onmouseover="this.src='img/20.png'" onmouseout="this.src='img/2.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="4" onclick="no(4,3)" src="img/3.png" onmouseover="this.src='img/30.png'" onmouseout="this.src='img/3.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="1" onclick="go(1,4)" src="img/4.png" onmouseover="this.src='img/40.png'" onmouseout="this.src='img/4.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="5" onclick="no(5,5)" src="img/5.png" onmouseover="this.src='img/50.png'" onmouseout="this.src='img/5.png'" style="margin-top:10px; width:60%;"></center></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee">
+		<div class="row tt bees hidden">
+			<div class="col-md-3 sec2" style="padding:10px;"></div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/bees.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<div class="row  ques2 hidden">
+					<div class="col-md-12"><center><img class="mo" id="7" onclick="no(7,1)" src="img/1.png" onmouseover="this.src='img/10.png'" onmouseout="this.src='img/1.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="6" onclick="go(6,2)" src="img/2.png" onmouseover="this.src='img/20.png'" onmouseout="this.src='img/2.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="8" onclick="no(8,3)" src="img/3.png" onmouseover="this.src='img/30.png'" onmouseout="this.src='img/3.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="9" onclick="no(9,4)" src="img/4.png" onmouseover="this.src='img/40.png'" onmouseout="this.src='img/4.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="10" onclick="no(10,5)" src="img/5.png" onmouseover="this.src='img/50.png'" onmouseout="this.src='img/5.png'" style="margin-top:10px; width:60%;"></center></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="cows">
+		<div class="row tt cow hidden">
+			<div class="col-md-3 sec3" style="padding:10px;"></div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/cow.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<div class="row  ques3 hidden">
+					<div class="col-md-12"><center><img class="mo" id="12" onclick="no(12,2)" src="img/1.png" onmouseover="this.src='img/10.png'" onmouseout="this.src='img/1.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="13" onclick="no(13,2)" src="img/2.png" onmouseover="this.src='img/20.png'" onmouseout="this.src='img/2.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="11" onclick="go(11,3)" src="img/3.png" onmouseover="this.src='img/30.png'" onmouseout="this.src='img/3.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="14" onclick="no(14,4)" src="img/4.png" onmouseover="this.src='img/40.png'" onmouseout="this.src='img/4.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="15" onclick="no(15,5)" src="img/5.png" onmouseover="this.src='img/50.png'" onmouseout="this.src='img/5.png'" style="margin-top:10px; width:60%;"></center></div>
+				</div>
+			</div>
+		</div>	
+		</div>	
+		<div class="bird">
+		<div class="row tt birds hidden">
+			<div class="col-md-3 sec4" style="padding:10px;"></div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/birds.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<div class="row  ques4 hidden">
+					<div class="col-md-12"><center><img class="mo" id="17" onclick="no(17,1)" src="img/1.png" onmouseover="this.src='img/10.png'" onmouseout="this.src='img/1.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="20" onclick="no(20,2)" src="img/2.png" onmouseover="this.src='img/20.png'" onmouseout="this.src='img/2.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="18" onclick="no(18,3)" src="img/3.png" onmouseover="this.src='img/30.png'" onmouseout="this.src='img/3.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="19" onclick="no(19,4)" src="img/4.png" onmouseover="this.src='img/40.png'" onmouseout="this.src='img/4.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="16" onclick="go(16,5)" src="img/5.png" onmouseover="this.src='img/50.png'" onmouseout="this.src='img/5.png'" style="margin-top:10px; width:60%;"></center></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="elephants">
+		<div class="row tt elephant hidden">
+			<div class="col-md-3 sec5" style="padding:10px;"></div>
+			<div class="col-md-6" style="padding:10px;">
+				<img src="img/elephant.png" class="img1" style="width:100%;">
+			</div>
+			<div class="col-md-6" style="padding:10px;">
+				<div class="row  ques5 hidden">
+					<div class="col-md-12"><center><img class="mo" id="21" onclick="go(21,1)" src="img/1.png" onmouseover="this.src='img/10.png'" onmouseout="this.src='img/1.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="23" onclick="no(23,2)" src="img/2.png" onmouseover="this.src='img/20.png'" onmouseout="this.src='img/2.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="22" onclick="no(22,3)" src="img/3.png" onmouseover="this.src='img/30.png'" onmouseout="this.src='img/3.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="24" onclick="no(24,4)" src="img/4.png" onmouseover="this.src='img/40.png'" onmouseout="this.src='img/4.png'" style="margin-top:10px; width:60%;"></center></div>
+					<div class="col-md-12"><center><img class="mo" id="25" onclick="no(25,5)" src="img/5.png" onmouseover="this.src='img/50.png'" onmouseout="this.src='img/5.png'" style="margin-top:10px; width:60%;"></center></div>
+				</div>
+			</div>
+		</div>	
+		</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="lis2" src="audio/lis2.mp3"></audio>
+<audio id="lis3" src="audio/lis3.mp3"></audio>
+<audio id="lis4" src="audio/lis4.mp3"></audio>
+<audio id="lis5" src="audio/lis5.mp3"></audio>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<audio id="s" src="audio/lis1.mp3"></audio>
+<script>
+
+var currentTime =0;
+
+function updateCurrentTime(){
+currentTime++;
+console.log(currentTime);
+	if(currentTime==4){
+		$('.sec1').addClass('hidden')
+		$('.ques1').removeClass('hidden')
+	}
+}
+
+function yes()
+{  
+	var audio = document.getElementById('s');
+	audio.play();
+	updateCurrentTime();
+    setInterval(function(){
+		updateCurrentTime();
+	},1000);
+}
+
+
+function no(b,n){
+var audio = document.getElementById('audio2');
+	audio.play();
+var wro=n;
+
+$('#'+b).attr("src", "img/"+wro+"r.png");
+$('#'+b).attr("onmouseover", "img/"+wro+"r.png");
+$('#'+b).attr("onmouseout", "img/"+wro+"r.png");
+
+}
+
+var q,w,e,r,t,y;
+function go(a,n){
+var b = a+1;
+var c = a+2;
+var d = a+3;
+var e = a+4;
+var cor = n;
+console.log(n);
+$('#'+b).css("pointer-events", "none");
+$('#'+c).css("pointer-events", "none");
+$('#'+d).css("pointer-events", "none");
+$('#'+e).css("pointer-events", "none");
+
+$('#'+a).attr("src", "img/"+cor+"g.png");
+$('#'+a).attr("onmouseover", "img/"+cor+"g.png");
+$('#'+a).attr("onmouseout", "img/"+cor+"g.png");
+
+
+if(a==1){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setTimeout(function(){
+	$('.lion').addClass('hidden')
+	$('.bees').removeClass('hidden')
+	var audio = document.getElementById('lis2');
+	audio.play();
+	},3000);
+	setInterval(function(){
+	$('.sec2').addClass('hidden')
+		$('.ques2').removeClass('hidden')
+	},8000);
+}
+else if (a==6){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setTimeout(function(){
+	$('.bee').addClass('hidden')
+	$('.cow').removeClass('hidden')
+	var audio = document.getElementById('lis3');
+	audio.play();
+	},3000);
+	setInterval(function(){
+	$('.sec3').addClass('hidden')
+		$('.ques3').removeClass('hidden')
+	},6000);
+}
+
+else if (a==11){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setTimeout(function(){
+	$('.cows').addClass('hidden')
+	$('.birds').removeClass('hidden')
+	var audio = document.getElementById('lis4');
+	audio.play();
+	},3000);
+	setInterval(function(){
+	$('.sec4').addClass('hidden')
+		$('.ques4').removeClass('hidden')
+	},6000);
+}
+
+
+else if (a==16){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setTimeout(function(){
+	$('.bird').addClass('hidden')
+	$('.elephant').removeClass('hidden')
+	var audio = document.getElementById('lis5');
+	audio.play();
+	},3000);
+	setInterval(function(){
+	$('.sec5').addClass('hidden')
+		$('.ques5').removeClass('hidden')
+	},6000);
+}
+
+else if (a==21){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setInterval(function(){
+		window.location = "rani1.html";
+	},2000);
+}
+
+}
+
+
+</script>
+</body>
+
+</html>

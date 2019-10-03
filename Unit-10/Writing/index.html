@@ -1,0 +1,211 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	width:100%;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 6px 14px;
+	cursor: pointer;
+	text-align: left;
+}
+.col-md-12{
+line-height:50px;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:95%;
+}
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+
+.hidden {
+	display: none
+}
+.vis{
+	font-size:24px;
+	visibility:hidden;
+}
+.changedClass{
+	font-size:24px;
+}
+.ban{
+border:2px solid;
+background:white;
+}
+</style>
+</head>
+
+<body> 
+<div class="container tab1">
+<h2>WRITING</h2>
+<h3 class="f">Put the following words in the right order to make sentences.</h3>
+	<div class="rohit">
+		<div class="row images">
+			<div class="col-md-12 ques1 ">
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(3)" >blue</span> <span class="block" onclick="c(1)" >have</span> <span class="block" onclick="c(2)">a</span> <span class="block" onclick="c(4)">cycle</span> <span class="block" onclick="c(0)">I</span></div>
+					<div class="col-md-12 ban"><span class="a0 vis">I</span> <span class="a1 vis">have</span> <span class="a2 vis">a</span> <span class="a3 vis">blue</span> <span class="a4 vis">cycle.</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(11)" >my</span> <span class="block" onclick="c(10)" >on</span> <span class="block" onclick="c(8)" >to</span> <span class="block" onclick="c(12)" >bicycle</span> <span class="block" onclick="c(6)" >I</span> <span class="block" onclick="c(7)">go</span> <span class="block" onclick="c(9)">school</span></div>
+					<div class="col-md-12 ban"><span class="a6 vis">I</span> <span class="a7 vis">go</span> <span class="a8 vis">to</span> <span class="a9 vis">school</span> <span class="a10 vis">on</span> <span class="a11 vis">my</span> <span class="a12 vis">bicycle.</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(16)" >has</span> <span class="block" onclick="c(14)">My</span> <span class="block" onclick="c(15)">school</span> <span class="block" onclick="c(19)" >playground</span> <span class="block" onclick="c(18)">big</span> <span class="block" onclick="c(17)">a</span></div>
+					<div class="col-md-12 ban"><span class="a14 vis">My</span> <span class="a15 vis">school</span> <span class="a16 vis">has</span> <span class="a17 vis">a</span> <span class="a18 vis">big</span> <span class="a19 vis">playground.</span> </div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(22)" >play</span> <span class="block" onclick="c(24)" >my</span> <span class="block" onclick="c(26)">in</span> <span class="block" onclick="c(28)">playground</span> <span class="block" onclick="c(21)" >I</span> <span class="block" onclick="c(23)" >with</span> <span class="block" onclick="c(25)">friends</span> <span class="block" onclick="c(27)">the</span></div>
+					<div class="col-md-12 ban"><span class="a21 vis">I</span> <span class="a22 vis">play</span> <span class="a23 vis">with</span> <span class="a24 vis">my</span> <span class="a25 vis">friends</span> <span class="a26 vis">in</span> <span class="a27 vis">the</span> <span class="a28 vis">playground.</span></div>
+				</div>
+				<div class="row tt">
+					<div class="col-md-12" style="padding:20px;"><span class="block" onclick="c(31)" >eat</span> <span class="block" onclick="c(30)">I</span> <span class="block" onclick="c(35)">friends</span> <span class="block" onclick="c(32)" >lunch</span> <span class="block" onclick="c(33)">with</span> <span class="block" onclick="c(34)">my</span></div>
+					<div class="col-md-12 ban"><span class="a30 vis">I</span> <span class="a31 vis">eat</span> <span class="a32 vis">lunch</span> <span class="a33 vis">with</span> <span class="a34 vis">my</span> <span class="a35 vis">friends.</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/res2.png" onmouseover="this.src='../img/res1.png'" onmouseout="this.src='../img/res2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" onclick="show()" src="../img/solu2.png" onmouseover="this.src='../img/solu1.png'" onmouseout="this.src='../img/solu2.png'" style="margin-top:10px; width:60%;"></center></div>
+		</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" >
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<script>
+window.onload = function(e){ 
+$("#sol").css("pointer-events", "none");
+}
+var z = 0; 
+var y = 6; 
+var w = 14; 
+var u = 21; 
+var v = 30; 
+
+function play(){
+var audio = document.getElementById('audio1');
+audio.play();
+}
+function i(x){
+play();
+$('.a'+x).removeClass('vis');
+z++; 
+console.log(z);
+}
+function j(x){
+play();
+$('.a'+x).removeClass('vis');
+y++; 
+console.log(y);
+}
+function k(x){
+play();
+$('.a'+x).removeClass('vis');
+w++; 
+console.log(w);
+}
+function l(x){
+play();
+$('.a'+x).removeClass('vis');
+u++; 
+console.log(u);
+}
+function m(x){
+play();
+$('.a'+x).removeClass('vis');
+v++; 
+console.log(v);
+}
+function c(x){
+if(x==z){
+i(z);
+}
+else if(x==y){
+j(y);
+}
+else if(x==w){
+k(w);
+}
+else if(x==u){
+l(u);
+}
+else if(x==v){
+m(v);
+}
+}
+function done(){
+$("#sol").css("pointer-events", "auto");
+console.log('z =' + z);
+console.log('y =' + y);
+console.log('w =' + w);
+console.log('u =' + u);
+console.log('v =' + v);
+if(z==5 && y==13 && w==20 && u==29 && v==36 ){
+	play();
+	setInterval(function(){
+	$('.tab1').addClass('hidden');
+	$('.tab2').removeClass('hidden');
+	},2000);
+	setInterval(function(){ 
+	window.location="../index.html";
+	},4000);
+}
+else{
+var audio = document.getElementById('audio2');
+audio.play();
+}
+}
+function show() { 
+$("#submit").css("pointer-events", "none");
+$('span').removeClass('vis');
+} 
+</script>
+</body>
+</html>

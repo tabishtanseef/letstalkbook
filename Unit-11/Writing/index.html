@@ -1,0 +1,239 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-image: url('../img/yellow.jpg');
+	background-attachment:fixed;
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+.block {
+	border: none;
+	margin-top: 20px;
+	border-radius:20px;
+	background: #156a93;
+	color:white;			
+	box-shadow:2px 2px 1px #9ce7ec;
+	font-family: roboto;
+	padding: 14px 28px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: left;
+}
+.tab1{
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:50px;
+	font-family: 'Mukta', sans-serif;
+	background-image:url('../img/3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	box-shadow:5px 5px 5px #DD4803;
+	border:2px solid #DD4803;
+	width:80%;
+}
+
+.tt{
+	border: 2px solid #156a93;
+    background-image: url('../img/yellow.jpg');
+	margin: 20px;
+	border-radius:20px;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 20px;
+	font-weight:bold;
+	font-size: 22px;
+}
+
+.hidden {
+	display: none
+}
+select{
+border-radius:20px;
+border: 2px solid #FCB424;
+background:#fbe99d;
+font-family:Roboto;
+}
+option{
+text-align:center;
+background:transparent;
+}
+.sel{
+margin-left:10%;
+}
+</style>
+</head>
+
+<body>
+	
+    
+<div class="container tab1">
+	<h2>WRITING</h2>
+	<h3 class="l ">click on the correct choice to complete sentences.</h3>
+	<div class="rohit">
+	<div class="ques1">
+		<div class="row tt"    >
+		
+		<div class="col-md-12">
+		1.  <select id="a1"></select> many flowers in the garden.<br><hr>
+		2.  <select id="a2"></select> two books in my bag.<br><hr>
+		3.  <select id="a3"></select> a pen on the table.<br><hr>
+		4.  <select id="a4"></select> biscuits in the plate.<br><hr>
+		5.  <select id="a5"></select> a big house on the hill.<br><hr>
+     	6.	<select id="a6"></select> one Sun in the sky.<br><hr>
+		7.  <select id="a7"></select> a lot of coins in my pocket.<br><hr>
+		8.  <select id="a8"></select> no holiday in this week.<br><hr>
+		9.  <select id="a9"></select> pencils in my hand.<br><hr>
+		10. <select id="a10"></select> many shops in the market.<br>
+		<hr>
+		
+		</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-4"><center><img id="" onclick="window.location.reload()" src="../img/res2.png" onmouseover="this.src='../img/res1.png'" onmouseout="this.src='../img/res2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:60%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" disabled onclick="solve()" src="../img/solu2.png" onmouseover="this.src='../img/solu1.png'" onmouseout="this.src='../img/solu2.png'" style="margin-top:10px; width:60%;"></center></div>
+		</div>
+	</div>
+	</div>
+	<br>
+</div>
+<div class="tab2 hidden" style="background:cyan;">
+	<center> <img height="auto" width="100%" src="../img/Welldone.gif"></center>
+</div>
+<audio id="audio2" src="../audio/try-again.mp3"></audio>
+<audio id="audio1" src="../audio/well-done.mp3"></audio>
+<iframe src="audio/1.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+
+
+</iframe> 
+<script>
+
+
+	
+function done(){
+
+ var a1 = document.getElementById("a1");
+ var a2 = document.getElementById("a2");
+ var a3 = document.getElementById("a3");
+ var a4 = document.getElementById("a4");
+ var a5 = document.getElementById("a5");
+ var a6 = document.getElementById("a6");
+ var a7 = document.getElementById("a7");
+ var a8 = document.getElementById("a8");
+ var a9 = document.getElementById("a9");
+ var a10 = document.getElementById("a10");
+
+
+ 
+var ans1= a1.options[a1.selectedIndex].text;
+var ans2= a2.options[a2.selectedIndex].text;
+var ans3= a3.options[a3.selectedIndex].text;
+var ans4= a4.options[a4.selectedIndex].text;
+var ans5= a5.options[a5.selectedIndex].text;
+var ans6= a6.options[a6.selectedIndex].text;
+var ans7= a7.options[a7.selectedIndex].text;
+var ans8= a8.options[a8.selectedIndex].text;
+var ans9= a9.options[a9.selectedIndex].text;
+var ans10= a10.options[a10.selectedIndex].text;
+
+$("#sol").css("pointer-events", "auto");
+ if(ans1=="" && ans2=="" && ans3=="" && ans4=="" && ans5=="" && ans6=="" && ans7=="" && ans8=="" && ans9=="" && ans10==""){
+$("#sol").css("pointer-events", "none");
+ }
+
+if(ans1!="There are"){
+$('#a1').css("border",'2px solid red');
+}
+if(ans2!="There are"){
+$('#a2').css("border",'2px solid red');
+}
+if(ans3!="There is"){
+$('#a3').css("border",'2px solid red');
+}
+if(ans4!="There are"){
+$('#a4').css("border",'2px solid red');
+}
+if(ans5!="There is "){
+$('#a5').css("border",'2px solid red');
+}
+if(ans6!="There is"){
+$('#a6').css("border",'2px solid red');
+}
+if(ans7!="There are"){
+$('#a7').css("border",'2px solid red');
+}
+if(ans8!="There is "){
+$('#a8').css("border",'2px solid red');
+}
+if(ans9!="There are"){
+$('#a9').css("border",'2px solid red');
+}
+if(ans10!="There are"){
+$('#a10').css("border",'2px solid red');
+}
+
+
+	if(ans1=="There are" && ans2=="There are" && ans3=="There is" && ans4=="There are" && ans5=="There is" && ans6=="There is" && ans7=="There are" && ans8=="There is" && ans9=="There are" && ans10=="There are" ){
+	var audio = document.getElementById('audio1');
+	audio.play();
+	setInterval(function(){
+		window.location = "hero.html";
+	},2000);
+	
+	}
+	else{
+	var audio = document.getElementById('audio2');
+	audio.play();
+	}
+}
+window.onload = function(e){ 
+$("#sol").css("pointer-events", "none");
+    $('#a1').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a2').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a3').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a4').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a5').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+
+    $('#a6').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a7').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a8').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a9').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    $('#a10').append("<option selected disabled>     </option><option>There are</option><option>There is</option>");
+    }
+function solve(){
+	$('select').css("border",'2px solid green');
+$("#submit").css("pointer-events", "none");
+ 
+$('#a1').val('There are');
+$('#a2').val('There are');
+$('#a3').val('There is');
+$('#a4').val('There are');
+$('#a5').val('There is');
+$('#a6').val('There is');
+$('#a7').val('There are');
+$('#a8').val('There is');
+$('#a9').val('There are');
+$('#a10').val('There are');
+
+}
+    </script>
+</body>
+
+</html>

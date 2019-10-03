@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+body {
+	background-image: url('../img/3.jpg');
+	background-attachment:fixed;
+}
+h2,h3 {
+	background-image: url('../img/yellow.jpg');
+	margin-top: 10px;
+	border: 2px solid #156a93;
+	box-shadow:5px 5px 5px #156a93;
+	padding: 25px; 
+	border-radius:20px;
+	text-align: center;
+	font-weight: bold
+}
+</style>
+</head>
+<body>
+
+<center>
+<h2>SPEAKING</h2>
+<video src="garden.mp4" controls style="width:80%; border:5px solid;"></video>
+<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"><center><img id="submit" onclick="done()" src="../img/sub2.png" onmouseover="this.src='../img/sub1.png'" onmouseout="this.src='../img/sub2.png'" style="margin-top:10px; width:250px;"></center></div>
+			<div class="col-md-4"></div>
+		</div>
+</center>
+</body>
+<script>
+
+function done(){
+setInterval(function(){ 
+		window.location="../index.html";
+		},4000);
+}
+</script>
+</html>
